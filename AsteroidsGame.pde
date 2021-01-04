@@ -2,7 +2,6 @@ Spaceship feiChuan;
 
 Star[] xing = new Star[666];
 
-ArrayList <Asteroid> xiaoXing = new ArrayList <Asteroid>();
 boolean wButton, aButton, sButton, dButton;
 
 public void setup() 
@@ -15,12 +14,6 @@ public void setup()
   for(int i = 0; i < xing.length;i++){
 
     xing[i]= new Star();   
-
-  }
-
-  for(int i = 0; i < (int) (Math.random()*5)+3; i++){
-
-  xiaoXing.add(new Asteroid());
 
   }
 
@@ -46,13 +39,6 @@ public void draw()
 
   }
 
- for(int i = 0; i < xiaoXing.size(); i++){
-
-    xiaoXing.get(i).move();
-
-    xiaoXing.get(i).show();
-
-  }
  
 
   if(wButton){
